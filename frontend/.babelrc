@@ -1,0 +1,15 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    [
+      "babel-plugin-module-resolver",
+      {
+        // Allows "root" imports from src
+        // e.g. import "/components/Common/Button"
+        "alias": {
+          "": "./"
+        }
+      }
+    ]
+  ]
+}
